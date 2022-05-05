@@ -1,1 +1,38 @@
-<div class="interactive-wrapper"></div>
+<div class="interactive-wrapper">
+    <div id="outer-wrapper" class="showcase">
+			<div class="row">
+			<div class="main-col">
+				<div class="row">
+				<div class='figureTitle' id="chartTitle">Two-party preferred swing by electorate</div>
+				<div class='subTitle' id="subTitle"></div>
+				</div>
+				<div class="row notes">
+					<div><b>Last updated: <span id="lastUpdated"> </span></b></div>
+				</div>	
+				<div class="row">
+					<div class='notes row' id='chartKey'>
+					Party key: <div class="keyBlock"><span class="keySquare LIB"></span>Coalition </div><div class="keyBlock"><span class="keySquare ALP"></span>Labor </div><div class="keyBlock"><span class="keySquare GRN"></span>Greens </div><div class="keyBlock"><span class="keySquare CA"></span>Centre Alliance </div><div class="keyBlock"><span class="keySquare KAP"></span> Katter </div><div class="keyBlock"><span class="keySquare IND"></span>Independent </div><div class="keyBlock"><span class="keySquare Excluded"></span>Excluded due to data</div>
+				</div>
+				<div class="notes row" id='controls1'>
+					Sort by:<span class="btn active" id="swingSort">swing</span> <span class="btn" id="stateSort">state</span> <span class="btn" id="partySort">incumbent party</span>
+				</div>
+				<div class="notes row" id='controls2'>
+					Color by: <span class="btn active" id="colorParty">predicted winner</span> <span class="btn " id="colorSwing">swing direction</span>  
+				</div>
+				
+				</div>
+		</div>
+		</div>
+			<div class="row borderBottom chartSans" id="graphicContainer">	
+					<div id="loadingContainer">Loading...</div>
+			</div>
+			<div class='footer offset'>
+				<div id="footerAnnotations">
+
+				</div>	
+				
+				<span id="footnote"></span> Guardian graphic | Source: AEC<span id="sourceText"></span>
+			</div>	
+			
+	</div>
+</div>

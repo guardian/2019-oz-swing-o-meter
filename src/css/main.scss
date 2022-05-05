@@ -1,13 +1,104 @@
+
 @import "mq";
 @import "fonts";
 @import "palette";
 
 // Uncomment for embeds
-//@import "embed";
+@import "embed";
 // Uncomment for full screen (including immersive article main media)
-//@import "fullscreen";
+/*@import "fullscreen";*/
+@import "charts";
+@import "grid";
 
 .element-atom,
 .interactive-atom {
     margin: 0 !important;
+
+    .interactive-wrapper {
+
+
+    	max-width:1260px;
+
+		.ALP { color: #b51800; fill:#b51800; background-color:#b51800;}
+		.LNP { color: #005689; fill:#005689; background-color:#005689;}
+		.LIB { color: #005689; fill:#005689;background-color:#005689;}
+		.GRN { color: #298422; fill:#298422;background-color:#298422;}
+		.IND { color: #767676; fill:purple;background-color:purple;}
+		.CA { color: #e6711b; fill:#e6711b;background-color:#e6711b;}
+		.NXT { color: #e6711b; fill:#e6711b;background-color:#e6711b;}
+		.KAP { color: #ff9b0b; fill:#ff9b0b;background-color:#ff9b0b;}
+		.NAT { color: #197caa; fill:#197caa;background-color:#197caa;}
+		.Unknown { color: #767676; fill:#767676;background-color:#767676;}
+		.Excluded { color: #000; fill:#000;background-color:#000;}
+
+/*		[data-partyname='on'] { background-color: #B3B3B4; color: #B3B3B4; }
+		[data-partyname='ac'] { background-color: #B3B3B4; color: #B3B3B4; }
+		[data-partyname='ind'] { background-color: #B3B3B4; color: #B3B3B4; }
+		[data-partyname='Pending'] { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQVQIW2N8+PDhGQYoOHnyJAMjTADEMTc3hwjAOCCFjKtWrToDkoEBAG1vFhyE06BwAAAAAElFTkSuQmCC) repeat; color: #B3B3B4; }
+		[data-partyname='pup'] { background-color: #7D0069; color: #7D0069; }
+		[data-partyname='kap'] { background-color: #ff9b0b; color: #ff9b0b; }
+		[data-partyname='lnp'] { background-color: #005689; color: #005689; }
+		[data-partyname='lib'] { background-color: #005689; color: #005689; }
+		[data-partyname='coal'] { background-color: #005689; color: #005689; }
+		[data-partyname='cln'] { background-color: #005689; color: #005689; }
+		[data-partyname='lp'] { background-color: #005689; color: #005689; }
+		[data-partyname='np'] { background-color: #197caa; color: #197caa; }
+		[data-partyname='clp'] { background-color: #005689; color: #005689; }
+		[data-partyname='nat'] { background-color: #197caa; color: #197caa; }
+		[data-partyname='nxt'] { background-color: #e6711b; color: #e6711b; }
+		[data-partyname='xen'] { background-color: #e6711b; color: #e6711b; }
+		[data-partyname='other'] { background-color: #b3b3b3; color: #b3b3b3; }*/
+
+	.btn {
+        width:auto;
+        margin-left:5px;        
+        border-radius: 16px;
+        text-align: center;
+        padding: 5px 10px;
+        line-height:1em; 
+        font-family: "Guardian Agate Sans", Arial, sans-serif;
+        overflow:hidden;
+        color:#FFFFFF;
+        background-color: #bdbdbd;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    #loadingContainer {
+    	text-align: center;
+    	width:auto;
+        margin-left:5px;        
+        border-radius: 16px;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 16px;
+        color:#FFFFFF;
+        background-color: #bdbdbd;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        float: left;
+    }
+
+    .labelText {
+    	display: inline-block;
+    	padding: 5px 10px;
+    	line-height:1em; 
+    }
+
+    .grid line {
+	  stroke: lightgrey;
+	  stroke-opacity: 0.7;
+	  shape-rendering: crispEdges;
+	}
+
+	.grid path {
+	  stroke-width: 0;
+	}
+
+    .btn.active {
+        background-color: #197caa;
+    }
+
+    }
 }
